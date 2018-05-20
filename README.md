@@ -1,10 +1,10 @@
 owl-serialisation
 ====
 
-Functions for serlialising Owl matrices and NDarrays.
+Functions for serlialising Owl matrices and ndarrays.
 
 At present only [bin_prot](https://github.com/janestreet/bin_prot)-based
-serialisation for dense matrices is provided.  See
+serialisation for dense matrices and ndarrays is provided.  See
 [doc/bin_prot.md](doc/bin_prot.md).
 
 Other kinds of serialization are expected to be added, such as json,
