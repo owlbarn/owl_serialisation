@@ -82,22 +82,24 @@ val multiply_array_elts : int array -> int
     [ppx_bin_prot]. *)
 
 val bin_flattened : flattened Bin_prot.Type_class.t
+(** There might be more information about this value at 
+    https://github.com/janestreet/bin_prot . *)
 
 val bin_shape_flattened : Bin_prot.Shape.t
 (** There might be more information about this function at 
-    https://github.com/janestreet/bin_prot *)
+    https://github.com/janestreet/bin_prot . *)
 
 val bin_size_flattened : flattened -> int
 (** Return the size in bytes of a [flattened] from [bin_prot]'s point of view. *)
 
 val bin_write_flattened : Bin_prot.Common.buf -> pos:Bin_prot.Common.pos -> flattened -> Bin_prot.Common.pos
-(** Given a [bin_prot] buffer an an initial byte position in the buffer
+(** Given a [bin_prot] buffer and an initial byte position in the buffer
     (e.g. 0), serialise the [flattened] into the buffer starting at that
     position. *)
 
 val bin_writer_flattened : flattened Bin_prot.Type_class.writer
 (** There might be more information about this function at 
-    https://github.com/janestreet/bin_prot *)
+    https://github.com/janestreet/bin_prot . *)
 
 val bin_read_flattened : Bin_prot.Common.buf -> pos_ref:Bin_prot.Common.pos_ref -> flattened
 (** Given a [bin_prot] buffer and a variable containing a reference to an
@@ -108,5 +110,5 @@ val bin_read_flattened : Bin_prot.Common.buf -> pos_ref:Bin_prot.Common.pos_ref 
 
 val bin_reader_flattened : flattened Bin_prot.Type_class.reader
 (** There might be more information about this function at 
-    https://github.com/janestreet/bin_prot *)
+    https://github.com/janestreet/bin_prot . *)
 
