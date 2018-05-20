@@ -3,7 +3,8 @@ Owl serialization with `bin_prot`
 
 `owl-serialization` provides functions for serializing Owl dense
 matrices and ndarrays using https://github.com/janestreet/bin_prot,
-among other things.
+among other things.  Recent API documentation is available
+[here](http://members.logical.net/~marshall/owl/owl_bin_prot/Owl_bin_prot/index.html).
 
 ## Loading
 
