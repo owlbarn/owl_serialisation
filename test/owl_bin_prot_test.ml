@@ -1,10 +1,10 @@
 (** owl_bin_prot_test.ml: Create and run speed tests on an Owl ndarray. *)
 
 let usage argv =
-  print_string "Tests serializing and unserializing ndarrays to/from disk\n";
-  Printf.printf "Usage: %s  megabytes_in_file  number_of_cycles  [true/false]\n" argv.(0);
-  print_string ("If third argument is present and is \"true\", there will be explicit garbage\n" ^
-               "collection between serialize and unserialize events (defaults to \"false\").\n");
+  Printf.printf "\nUsage: %s  megabytes_in_file  number_of_cycles  [true/false]\n" argv.(0);
+  print_string "\nTests serializing and unserializing ndarrays to/from disk.\n";
+  print_string ("\nIf third argument is present and is \"true\", there will be explicit garbage\n" ^
+               "collection between serialize and unserialize events (defaults to \"false\").\n\n");
   exit 1
 
 let main () =
