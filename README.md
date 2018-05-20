@@ -22,5 +22,5 @@ browser.  (Or use e.g. `odig odoc` after installing `odig` and `odoc`.)
 
 ## Note
 
-When using the functions in this library, North Americans may want to
+When using the functions in this library, North Americans should
 keep in mind that the code uses British spelling for "seriali*s*ation".
