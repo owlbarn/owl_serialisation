@@ -27,7 +27,7 @@ let x' = Owl_bin_prot.unserialize_from_file "x.bin"
 x = x'
 ```
 
-For more fine-grained options, see generated docs or the file
+For more fine-grained options, see the API docs or the file
 `src/owl_bin_prot/serialisation.mli`.
 
 To see how to serialize data structures in which Owl matrices or
