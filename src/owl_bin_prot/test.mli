@@ -1,6 +1,7 @@
 (** Owl_bin_prot.Test:
     Functions for speed tests on Owl_bin_prot serialisation functions.
-    These also be used as the basis of regression tests. *)
+    These also be used as the basis of simple regression tests; see e.g.
+    [test_serialize]. *)
 
 
 (* These next two should go somewhere else since they're not owl_bin_prot specific: *)
@@ -31,4 +32,5 @@ val test_serialise : ?gc:bool -> int -> int -> unit
     read-from-disk-and-unserialise steps performed by [test_serialise_once]
     and reports their average values over all [cycle] runs.  [gc] is [false]
     by default, and is passed to [test_serialise_once].  See that function's
-    doc for explanation of [gc]. *)
+    doc for explanation of [gc]. If the post-serialisation unserialized data 
+    differs from the original data, an exception will be raised. *)

@@ -36,7 +36,8 @@ let test_serialise ?(gc=false) m cycles =
   let init_times = [0.; 0.; 0.; 0.] in
   let times = ref init_times in
   for i = 1 to cycles do
-    let (_, new_times) = test_serialise_once ~gc nd in (* TODO: Add test for false? *)
+    let (success, new_times) = test_serialise_once ~gc nd in (* TODO: Add test for false? *)
+    if not success then failwith (Printf.sprintf "Unserialised data differs from original on run %d" i);
     times := List.map2 (+.) !times new_times
   done;
   let [avg_serial_cpu; avg_serial_wall; avg_unser_cpu; avg_unser_wall] = 
