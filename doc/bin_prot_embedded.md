@@ -23,7 +23,7 @@ Here is an example in `utop`, running it from the repo directory.
 
 Start `utop` with
 ```
-`jbuilder utop src/owl_bin_prot`
+jbuilder utop src/owl_bin_prot
 ```
 or use
 ```
