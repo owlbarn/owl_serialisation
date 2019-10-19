@@ -1,0 +1,8 @@
+(executables
+ (names owl_bin_prot_test)
+ (public_names owl_bin_prot_test)
+ (package owl_bin_prot)
+ (libraries owl_bin_prot)
+ (modes native)
+ ;(ocamlopt_flags (:standard -O3)) ; -dcmm ; -dcmm dumps intermediate rep
+ )

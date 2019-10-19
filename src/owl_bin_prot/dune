@@ -1,0 +1,7 @@
+(library
+ (name owl_bin_prot)
+ (public_name owl_bin_prot)
+ (modules serialise test)
+ (libraries core owl bin_prot)
+ (preprocess
+  (pps ppx_bin_prot)))

@@ -5,5 +5,5 @@ authors: ["mars0i"]
 homepage: "https://github.com/mars0i/owl_bin_prot"
 license: "MIT"
 build: [
-  ["jbuilder" "build" "--root" "." "-j" jobs "@install"]
+  ["dune" "build" "-p" name "-j" jobs]
 ]
