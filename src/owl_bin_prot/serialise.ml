@@ -19,7 +19,7 @@ let serialise x =
   let flat = ndarray_to_flattened x in
   let size = bin_size_flattened flat in
   let buf = create_buf size in
-  ignore(bin_write_flattened buf 0 flat);
+  ignore(bin_write_flattened buf ~pos:0 flat);
   buf
 
 let save_serialised buf filename =
@@ -56,7 +56,7 @@ let flattened_to_ndarray flat =
 
 let unserialise buf =
   let posref = ref 0 in
-  let flat = bin_read_flattened buf posref in
+  let flat = bin_read_flattened buf ~pos_ref:posref in
   flattened_to_ndarray flat
 
 let unserialise_from_file filename =
